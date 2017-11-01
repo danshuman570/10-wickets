@@ -7,6 +7,12 @@
 
     <title>10 WICKETS - Challenge your friends!</title>
 
+	<meta property="og:url"           content="https://sarthakdabhi.github.io/10-wickets/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="10 WICKETS - Challenge your friends!" />
+	<meta property="og:description"   content="10 WICKETS - Try to get ten wickets in a just minute. Challenge your friends!" />
+	<meta property="og:image"         content="https://sarthakdabhi.github.io/10-wickets/10-wickets.png" />
+
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <script src="https://use.fontawesome.com/bcbb3a7e4c.js"></script>
     <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
@@ -73,13 +79,16 @@
 		<div>
 			<span id="sWickets"></span> WICKETS IN  1 MIN
 			<br>
-
+				<div class="fb-share-button" data-href="https://sarthakdabhi.github.io/10-wickets/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsarthakdabhi.github.io%2F10-wickets%2F&amp;src=sdkpreparse">Share</a></div>
 			<br>
 			OR
 			<br>
 			CHALLENGE
 			<br>
-			<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>			
+			<div class="fb-share-button" data-href="https://sarthakdabhi.github.io/10-wickets/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsarthakdabhi.github.io%2F10-wickets%2F&amp;src=sdkpreparse">Share</a></div>
+			<br>
+			<br>
+			<button id="replay" onclick="window.location.reload();">Let's play again!</button>			
 		</div>
 	</div>
 
@@ -118,8 +127,12 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<div id="fb-root"></div>
-	<script>
-		
-	</script>	
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=155996135137042';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>	
   </body>
 </html>

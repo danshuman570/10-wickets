@@ -154,7 +154,7 @@ label {
 	font-size: 24px;
 }
 
-#start {
+#start, #replay {
 	cursor: pointer;
 	text-align: center;
 	border: none;

@@ -31,7 +31,7 @@ function startGame() {
 	// total time for game is 1 min
 	var totalInterval = setInterval(function() {
 		time++;
-		if(time < 60) {
+		if(time < 6) {
 			$('#time').html(time);
 		} else {
 			createjs.Sound.play("timeOver");	
@@ -44,6 +44,7 @@ function startGame() {
 			clearInterval(totalInterval);
 			$('#sWickets').html(wickets);
 			$('#game-over').show();
+			$('#replay').show();
 		}
 	}, 1000);		
 }
