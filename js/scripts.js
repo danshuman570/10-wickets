@@ -31,7 +31,7 @@ function startGame() {
 	// total time for game is 1 min
 	var totalInterval = setInterval(function() {
 		time++;
-		if(time < 6) {
+		if(time < 60) {
 			$('#time').html(time);
 		} else {
 			createjs.Sound.play("timeOver");	
